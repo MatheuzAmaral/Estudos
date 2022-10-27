@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+	int blusa;
+	float total;
+	
+	printf("Digite o valor de blusas compradas: ");
+	scanf("%d",&blusa);
+	
+	if ( blusa <= 2){
+		total = blusa * 50;
+	}else if( blusa <= 10){
+		total = blusa * 40;
+	}else{
+		total = blusa * 35;
+	}
+	
+	printf("comprado %d blusas por R$%f",blusa,total);
+	
+	
+}
